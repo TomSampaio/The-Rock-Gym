@@ -16,5 +16,22 @@ namespace Ginásio_inscrições
         {
             InitializeComponent();
         }
+        LoginInfo[] log;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoginInfo.Load(log);
+
+            for (int i = 0; i < log.Length; i++)
+            {
+                if (log[i].username == textBox1.Text && log[i].password == textBox2.Text)
+                {
+                    var form = new home();
+                    form.Show();
+                    this.Hide();
+                    return;
+                }
+            }
+            MessageBox.Show("Username ou Password errada");
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace Ginásio_Code
+namespace Ginásio_inscrições
 {
     public class UserData
     {
