@@ -112,5 +112,14 @@
   <ItemGroup>
     <None Include="Resources\Gym-Logo-Graphics-1-28.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gym Logo w border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iron-rev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iron-rev1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
