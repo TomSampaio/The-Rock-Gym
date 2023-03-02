@@ -16,5 +16,19 @@ namespace Ginásio_inscrições
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var form = new register();
+            form.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var form = new login();
+            form.Show();
+            this.Hide();
+        }
     }
 }
