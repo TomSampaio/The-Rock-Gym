@@ -59,9 +59,7 @@ namespace Ginásio_inscrições
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int dia = 0, mes = 0, ano = 0;
             double peso = 0, bodyFat = 0;
-            DateTime date;
             while (true)
             {
                 if (double.TryParse(Interaction.InputBox("Introduza o peso atual"), out peso))
@@ -85,7 +83,7 @@ namespace Ginásio_inscrições
             }*/
             userInfo.weight = peso.ToString();
             dataGridView1.Rows.Add(peso,bodyFat);
-            dataGridView1.Rows[dataGridView1.Rows.Count].HeaderCell.Value = DateTime.Now.ToString("dd/MM/yyyy");
+            dataGridView1.Rows[dataGridView1.Rows.Count-2].HeaderCell.Value = DateTime.Now.ToString("dd/MM/yyyy");
 
 
         }

@@ -30,6 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -38,8 +40,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblValor = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,15 +57,33 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Username,
             this.Column1});
             this.dataGridView1.Location = new System.Drawing.Point(339, 180);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 103;
             this.dataGridView1.Size = new System.Drawing.Size(405, 202);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // Username
+            // 
+            this.Username.HeaderText = "Peso (kg)";
+            this.Username.MinimumWidth = 8;
+            this.Username.Name = "Username";
+            this.Username.ReadOnly = true;
+            this.Username.Width = 150;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Massa Gorda (%)";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 150;
             // 
             // button1
             // 
@@ -163,20 +181,6 @@
             this.lblNome.Size = new System.Drawing.Size(74, 45);
             this.lblNome.TabIndex = 9;
             this.lblNome.Text = "%%";
-            // 
-            // Username
-            // 
-            this.Username.HeaderText = "Peso (kg)";
-            this.Username.MinimumWidth = 8;
-            this.Username.Name = "Username";
-            this.Username.Width = 150;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Massa Gorda (%)";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
             // 
             // home
             // 
