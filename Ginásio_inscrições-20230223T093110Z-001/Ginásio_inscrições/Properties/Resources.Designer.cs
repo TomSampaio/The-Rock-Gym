@@ -83,6 +83,16 @@ namespace Ginásio_inscrições.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iron_machines_gym {
+            get {
+                object obj = ResourceManager.GetObject("iron-machines-gym", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iron_rev {
             get {
                 object obj = ResourceManager.GetObject("iron-rev", resourceCulture);
@@ -96,6 +106,16 @@ namespace Ginásio_inscrições.Properties {
         internal static System.Drawing.Bitmap iron_rev1 {
             get {
                 object obj = ResourceManager.GetObject("iron-rev1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap linha_separadora {
+            get {
+                object obj = ResourceManager.GetObject("linha separadora", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
