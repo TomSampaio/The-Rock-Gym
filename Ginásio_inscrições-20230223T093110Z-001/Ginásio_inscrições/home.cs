@@ -19,6 +19,7 @@ namespace Ginásio_inscrições
         {
             InitializeComponent();
         }
+        DadosTabela[] dTable = new DadosTabela[0];
         UserData[] pHolder = new UserData[0];
         UserData userInfo;
         int pos = 0;
@@ -48,6 +49,26 @@ namespace Ginásio_inscrições
                         lblValor.Text = "35€";
                     }
                     return;
+                }
+            }
+
+            string fileT = @"UserData.xml";
+
+            if (File.Exists(fileT))
+            {
+                XmlSerializer fSrlT = new XmlSerializer(typeof(UserData[]));
+                FileStream fStrT = new FileStream(file, FileMode.Open);
+                pHolder = (UserData[])fSrlT.Deserialize(fStrT);
+                fStrT.Close();
+                Console.WriteLine("information loaded");
+                
+                for (int i = 0; i < dTable.Length; i++)
+                {
+                    if (dTable[i].user == lblNome.Text)
+                    {
+                        dataGridView1.Rows.Add(dTable[i].weight, dTable[i].bodyFat);
+                        dataGridView1.Rows[dataGridView1.Rows.Count - 2].HeaderCell.Value = dTable[i].date;
+                    }
                 }
             }
         }
@@ -86,6 +107,20 @@ namespace Ginásio_inscrições
             dataGridView1.Rows[dataGridView1.Rows.Count-2].HeaderCell.Value = DateTime.Now.ToString("dd/MM/yyyy");
 
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //terminar sessao
+
+            Array.Resize<DadosTabela>(ref dTable, dataGridView1.Rows.Count);
+            
+            for (int i = 0; i < dTable.Length; i++)
+            {
+                dTable[i] = new DadosTabela(lblNome.Text, dataGridView1.Rows[i].HeaderCell.ToString(), (double)dataGridView1.Rows[i].Cells[0].Value, (double)dataGridView1.Rows[i].Cells[1].Value);
+            }
+
+            DadosTabela.Save(dTable);
         }
     }
 }

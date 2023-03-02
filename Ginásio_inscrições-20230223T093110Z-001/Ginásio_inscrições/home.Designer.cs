@@ -145,6 +145,7 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "Terminar Sessão";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label2
             // 

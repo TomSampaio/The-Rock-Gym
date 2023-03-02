@@ -10,28 +10,31 @@ namespace Ginásio_inscrições
 {
     internal class DadosTabela
     {
+        public string user { get; set; }
         public string date { get; set; }
         public double weight { get; set; }
         public double bodyFat { get; set; }
 
         public DadosTabela()
         {
-            date = "";
-            weight = 0;
-            bodyFat = 0;
+            this.user = "";
+            this.date = "";
+            this.weight = 0;
+            this.bodyFat = 0;
         }
-        public DadosTabela(string data, double peso, double massaGorda)
+        public DadosTabela(string nome, string data, double peso, double massaGorda)
         {
-            date = data;
-            weight = peso;
-            bodyFat = massaGorda;
+            this.user = nome;
+            this.date = data;
+            this.weight = peso;
+            this.bodyFat = massaGorda;
         }
 
-        public static void Save(UserData[] arr)
+        public static void Save(DadosTabela[] arr)
         {
             string file = @"DadosTabela.xml";
 
-            XmlSerializer fSrl = new XmlSerializer(typeof(UserData[]));
+            XmlSerializer fSrl = new XmlSerializer(typeof(DadosTabela[]));
             FileStream fStr = new FileStream(file, FileMode.Create);
             fSrl.Serialize(fStr, arr);
             fStr.Close();
