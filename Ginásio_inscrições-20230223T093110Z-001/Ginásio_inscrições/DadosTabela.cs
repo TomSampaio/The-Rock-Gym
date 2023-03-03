@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 
 namespace Ginásio_inscrições
 {
-    internal class DadosTabela
+    public class DadosTabela
     {
         public string user { get; set; }
         public string date { get; set; }

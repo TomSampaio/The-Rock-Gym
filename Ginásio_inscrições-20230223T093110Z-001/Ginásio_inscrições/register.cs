@@ -57,58 +57,61 @@ namespace Ginásio_inscrições
                     {
                         price += checkedListBox1.CheckedItems.Count * 5;
                     }
-                    if (checkedListBox1.SelectedItem == "Cycling" && checkedListBox1.SelectedItem == "Pilates" && checkedListBox1.SelectedItem == "KickBox")
+                    if ((string)checkedListBox1.SelectedItem == "Cycling" && (string)checkedListBox1.SelectedItem == "Pilates" && (string)checkedListBox1.SelectedItem == "KickBox")
                     {
                         classes = 3;
                     }
-                    else if (checkedListBox1.SelectedItem == "Pilates" && checkedListBox1.SelectedItem == "KickBox")
+                    else if ((string)checkedListBox1.SelectedItem == "Pilates" && (string)checkedListBox1.SelectedItem == "KickBox")
                     {
                         classes = 2.2;
                     }
-                    else if (checkedListBox1.SelectedItem == "Cycling" && checkedListBox1.SelectedItem == "Pilates")
+                    else if ((string)checkedListBox1.SelectedItem == "Cycling" && (string)checkedListBox1.SelectedItem == "Pilates")
                     {
                         classes = 2.1;
                     }
-                    else if (checkedListBox1.SelectedItem == "Cycling" && checkedListBox1.SelectedItem == "KickBox")
+                    else if ((string)checkedListBox1.SelectedItem == "Cycling" && (string)checkedListBox1.SelectedItem == "KickBox")
                     {
                         classes = 2.3;
                     }
-                    else if (checkedListBox1.SelectedItem == "KickBox")
+                    else if ((string)checkedListBox1.SelectedItem == "KickBox")
                     {
                         classes = 1.3;
                     }
-                    else if (checkedListBox1.SelectedItem == "Pilates")
+                    else if ((string)checkedListBox1.SelectedItem == "Pilates")
                     {
                         classes = 1.2;
                     }
-                    else if (checkedListBox1.SelectedItem == "Cycling")
+                    else if ((string)checkedListBox1.SelectedItem == "Cycling")
                     {
                         classes = 1.1;
                     }
                 }
 
-                for (int i = 0; i < lInfo.Length; i++)
+                if (cmbDiscount.Text == "Convidado")
                 {
-                    if (lInfo[i].username == txtBoxConv.Text)
+                    for (int i = 0; i < lInfo.Length; i++)
                     {
-                        test = true;
-                        break;
+                        if (lInfo[i].username == txtBoxConv.Text)
+                        {
+                            test = true;
+                            break;
+                        }
+                        else
+                        {
+                            test = false;
+                        }
+                    }
+                    if (test == true)
+                    {
+                        price -= 5;
+                        check = true;
                     }
                     else
                     {
-                        test = false;
+                        check = false;
+                        MessageBox.Show("Usuário inexistente");
+                        return;
                     }
-                }
-                if (test == true)
-                {
-                    price -= 5;
-                    check = true;
-                }
-                else
-                {
-                    check = false;
-                    MessageBox.Show("Usuário inexistente");
-                    return;
                 }
                 Console.WriteLine(classes);
                 Array.Resize<UserData>(ref uData, uData.Length + 1);

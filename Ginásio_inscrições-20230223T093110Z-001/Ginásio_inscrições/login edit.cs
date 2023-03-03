@@ -21,7 +21,6 @@ namespace Ginásio_inscrições
         UserData[] pHolder = new UserData[0];
         private void button1_Click(object sender, EventArgs e)
         {
-            int pos;
             
             double classes = 0;
             int price = 0;
@@ -40,31 +39,31 @@ namespace Ginásio_inscrições
                 {
                     price += checkedListBox1.CheckedItems.Count * 5;
                 }
-                if (checkedListBox1.SelectedItem == "Cycling" && checkedListBox1.SelectedItem == "Pilates" && checkedListBox1.SelectedItem == "KickBox")
+                if ((string)checkedListBox1.SelectedItem == "Cycling" && (string)checkedListBox1.SelectedItem == "Pilates" && (string)checkedListBox1.SelectedItem == "KickBox")
                 {
                     classes = 3;
                 }
-                else if (checkedListBox1.SelectedItem == "Pilates" && checkedListBox1.SelectedItem == "KickBox")
+                else if ((string)checkedListBox1.SelectedItem == "Pilates" && (string)checkedListBox1.SelectedItem == "KickBox")
                 {
                     classes = 2.2;
                 }
-                else if (checkedListBox1.SelectedItem == "Cycling" && checkedListBox1.SelectedItem == "Pilates")
+                else if ((string)checkedListBox1.SelectedItem == "Cycling" && (string)checkedListBox1.SelectedItem == "Pilates")
                 {
                     classes = 2.1;
                 }
-                else if (checkedListBox1.SelectedItem == "Cycling" && checkedListBox1.SelectedItem == "KickBox")
+                else if ((string)checkedListBox1.SelectedItem == "Cycling" && (string)checkedListBox1.SelectedItem == "KickBox")
                 {
                     classes = 2.3;
                 }
-                else if (checkedListBox1.SelectedItem == "KickBox")
+                else if ((string)checkedListBox1.SelectedItem == "KickBox")
                 {
                     classes = 1.3;
                 }
-                else if (checkedListBox1.SelectedItem == "Pilates")
+                else if ((string)checkedListBox1.SelectedItem == "Pilates")
                 {
                     classes = 1.2;
                 }
-                else if (checkedListBox1.SelectedItem == "Cycling")
+                else if ((string)checkedListBox1.SelectedItem == "Cycling")
                 {
                     classes = 1.1;
                 }
@@ -73,7 +72,7 @@ namespace Ginásio_inscrições
             {
                 if (pHolder[i].username == login.nome)
                 {
-                    pHolder[i] = new UserData(login.nome, txtAge.Text, cmbGender.Text, txtWeight.Text, txtHeight.Text, cmbGoal.Text, price, classes, pHolder[i].hasDiscont);
+                    pHolder[i] = new UserData(login.nome, txtAge.Text, cmbGender.Text, pHolder[i].weight, txtHeight.Text, cmbGoal.Text, price, classes, pHolder[i].hasDiscont);
                     break;
                 }
             }
@@ -102,7 +101,6 @@ namespace Ginásio_inscrições
                 {
                     txtAge.Text = pHolder[i].age;
                     txtHeight.Text = pHolder[i].height;
-                    txtWeight.Text = pHolder[i].weight;
                     cmbGender.Text = pHolder[i].gender;
                     cmbGoal.Text = pHolder[i].goal;
                     if (pHolder[i].hasDiscont)
@@ -198,6 +196,34 @@ namespace Ginásio_inscrições
                                 cmbPlan.Text = "The Rock Silver (30€)";
                             }
                         }
+                    }
+
+                    if (pHolder[i].classes == 1.1)
+                        checkedListBox1.SetItemChecked(0, true);
+                    else if (pHolder[i].classes == 1.2)
+                        checkedListBox1.SetItemChecked(1, true);
+                    else if (pHolder[i].classes == 1.3)
+                        checkedListBox1.SetItemChecked(2, true);
+                    else if (pHolder[i].classes == 2.1)
+                    {
+                        checkedListBox1.SetItemChecked(0, true);
+                        checkedListBox1.SetItemChecked(1, true);
+                    }
+                    else if (pHolder[i].classes == 2.2)
+                    {
+                        checkedListBox1.SetItemChecked(1, true);
+                        checkedListBox1.SetItemChecked(2, true);
+                    }
+                    else if (pHolder[i].classes == 2.1)
+                    {
+                        checkedListBox1.SetItemChecked(0, true);
+                        checkedListBox1.SetItemChecked(2, true);
+                    }
+                    else if (pHolder[i].classes == 3)
+                    {
+                        checkedListBox1.SetItemChecked(0, true);
+                        checkedListBox1.SetItemChecked(1, true);
+                        checkedListBox1.SetItemChecked(2, true);
                     }
                 }
             }

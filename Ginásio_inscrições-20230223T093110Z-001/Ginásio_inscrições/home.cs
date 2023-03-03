@@ -19,8 +19,8 @@ namespace Ginásio_inscrições
         {
             InitializeComponent();
         }
-        DadosTabela[] dTable = new DadosTabela[0];
-        UserData[] pHolder = new UserData[0];
+        DadosTabela[] dTable;
+        UserData[] pHolder;
         UserData userInfo;
         int pos = 0;
         private void home_Load(object sender, EventArgs e)
@@ -38,32 +38,33 @@ namespace Ginásio_inscrições
                 if (pHolder[i].username == login.nome)
                 {
                     pos = i;
-                    userInfo = new UserData(pHolder[i].username, pHolder[i].age, pHolder[i].gender, pHolder[i].weight, pHolder[i].height, pHolder[i].goal, pHolder[i].price, pHolder[i].classes);
+                    userInfo = new UserData(pHolder[i].username, pHolder[i].age, pHolder[i].gender, pHolder[i].weight, pHolder[i].height, pHolder[i].goal, pHolder[i].price, pHolder[i].classes, pHolder[i].hasDiscont);
                     lblNome.Text = pHolder[i].username;
                     lblValor.Text = pHolder[i].price.ToString("0€");
                     return;
                 }
             }
 
-            string fileT = @"UserData.xml";
+            string fileT = @"DadosTabela.xml";
 
             if (File.Exists(fileT))
             {
-                XmlSerializer fSrlT = new XmlSerializer(typeof(UserData[]));
+                XmlSerializer fSrlT = new XmlSerializer(typeof(DadosTabela[]));
                 FileStream fStrT = new FileStream(file, FileMode.Open);
-                pHolder = (UserData[])fSrlT.Deserialize(fStrT);
+                dTable = (DadosTabela[])fSrlT.Deserialize(fStrT);
                 fStrT.Close();
                 Console.WriteLine("information loaded");
                 
                 for (int i = 0; i < dTable.Length; i++)
                 {
-                    if (dTable[i].user == lblNome.Text)
+                    if (dTable[i].user == userInfo.username)
                     {
                         dataGridView1.Rows.Add(dTable[i].weight, dTable[i].bodyFat);
-                        dataGridView1.Rows[dataGridView1.Rows.Count - 2].HeaderCell.Value = dTable[i].date;
+                        dataGridView1.Rows[dataGridView1.Rows.Count - 1].HeaderCell.Value = dTable[i].date;
                     }
                 }
             }
+
         }
 
         private void home_FormClosed(object sender, FormClosedEventArgs e)
@@ -110,10 +111,20 @@ namespace Ginásio_inscrições
             
             for (int i = 0; i < dTable.Length; i++)
             {
-                dTable[i] = new DadosTabela(lblNome.Text, dataGridView1.Rows[i].HeaderCell.ToString(), (double)dataGridView1.Rows[i].Cells[0].Value, (double)dataGridView1.Rows[i].Cells[1].Value);
+                dTable[i] = new DadosTabela(lblNome.Text, dataGridView1.Rows[i].HeaderCell.Value.ToString(), (double)dataGridView1.Rows[i].Cells[0].Value, (double)dataGridView1.Rows[i].Cells[1].Value);
             }
-
+            Console.WriteLine(dataGridView1.Rows[0].HeaderCell.Value.ToString());
             DadosTabela.Save(dTable);
+            var form = new Form1();
+            form.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var form = new login_edit();
+            form.Show();
+            this.Hide();
         }
     }
 }

@@ -293,7 +293,7 @@
             "Pilates",
             "KickBox"});
             this.checkedListBox1.Location = new System.Drawing.Point(361, 359);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(108, 49);
             this.checkedListBox1.TabIndex = 24;
@@ -323,7 +323,8 @@
             this.cmbDiscount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDiscount.FormattingEnabled = true;
             this.cmbDiscount.Items.AddRange(new object[] {
-            "Convidado"});
+            "Convidado",
+            " "});
             this.cmbDiscount.Location = new System.Drawing.Point(361, 424);
             this.cmbDiscount.Name = "cmbDiscount";
             this.cmbDiscount.Size = new System.Drawing.Size(108, 21);
@@ -380,7 +381,7 @@
             // 
             this.pictureBox1.Image = global::Ginásio_inscrições.Properties.Resources.linha_separadora;
             this.pictureBox1.Location = new System.Drawing.Point(542, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(22, 531);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
