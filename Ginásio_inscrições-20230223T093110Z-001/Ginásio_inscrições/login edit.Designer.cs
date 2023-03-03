@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmbDiscount = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.cmbPlan = new System.Windows.Forms.ComboBox();
@@ -47,29 +45,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // cmbDiscount
-            // 
-            this.cmbDiscount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbDiscount.Enabled = false;
-            this.cmbDiscount.FormattingEnabled = true;
-            this.cmbDiscount.Items.AddRange(new object[] {
-            "Irmão",
-            "Convidado"});
-            this.cmbDiscount.Location = new System.Drawing.Point(441, 276);
-            this.cmbDiscount.Name = "cmbDiscount";
-            this.cmbDiscount.Size = new System.Drawing.Size(108, 21);
-            this.cmbDiscount.TabIndex = 51;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(349, 276);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(78, 16);
-            this.label13.TabIndex = 50;
-            this.label13.Text = "Desconto:";
             // 
             // label12
             // 
@@ -99,8 +74,8 @@
             this.cmbPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPlan.FormattingEnabled = true;
             this.cmbPlan.Items.AddRange(new object[] {
-            "The Rock Silver (30€)",
-            "The Rock Gold (35€)"});
+            "The Rock Gold (35€)",
+            "The Rock Silver (30€)"});
             this.cmbPlan.Location = new System.Drawing.Point(441, 163);
             this.cmbPlan.Name = "cmbPlan";
             this.cmbPlan.Size = new System.Drawing.Size(108, 21);
@@ -243,8 +218,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(607, 391);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.cmbDiscount);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.cmbPlan);
@@ -262,15 +235,13 @@
             this.Controls.Add(this.label1);
             this.Name = "login_edit";
             this.Text = "Alterar Dados";
+            this.Load += new System.EventHandler(this.login_edit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cmbDiscount;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.ComboBox cmbPlan;

@@ -24,24 +24,37 @@ namespace Ginásio_inscrições
         {
             string file = @"LoginInfo.xml";
 
-            XmlSerializer fSrl = new XmlSerializer(typeof(LoginInfo[]));
-            FileStream fStr = new FileStream(file, FileMode.Open);
-            log = (LoginInfo[])fSrl.Deserialize(fStr);
-            fStr.Close();
-            Console.WriteLine("information loaded");
-
-            for (int i = 0; i < log.Length; i++)
+            if (File.Exists(file))
             {
-                if (log[i].username == textBox1.Text && log[i].password == textBox2.Text)
+                XmlSerializer fSrl = new XmlSerializer(typeof(LoginInfo[]));
+                FileStream fStr = new FileStream(file, FileMode.Open);
+                log = (LoginInfo[])fSrl.Deserialize(fStr);
+                fStr.Close();
+                Console.WriteLine("information loaded");
+
+                for (int i = 0; i < log.Length; i++)
                 {
-                    nome = log[i].username;
-                    var form = new home();
+                    if (log[i].username == textBox1.Text && log[i].password == textBox2.Text)
+                    {
+                        nome = log[i].username;
+                        var form = new home();
+                        form.Show();
+                        this.Hide();
+                        return;
+                    }
+                }
+                MessageBox.Show("Username ou Password errada");
+            }
+            else
+            {
+                if (MessageBox.Show("Não tem nenhuma conta criada.\nQuer criar uma conta?", "Prompt", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+                {
+                    var form = new register();
                     form.Show();
                     this.Hide();
                     return;
                 }
             }
-            MessageBox.Show("Username ou Password errada");
         }
 
         private void login_FormClosed(object sender, FormClosedEventArgs e)

@@ -16,9 +16,11 @@ namespace Ginásio_inscrições
         public string weight { get;set; }
         public string height { get; set; }
         public string goal { get; set; }
-        public string plan { get; set; }
+        public int price { get; set; }
+        public double classes { get; set; }
+        public bool hasDiscont { get; set; }
 
-        public UserData(string username, string age, string gender, string weight, string height, string goal, string plan)
+        public UserData(string username, string age, string gender, string weight, string height, string goal, int price, double classes, bool hasDiscont)
         {
             this.username = username;
             this.age = age;
@@ -26,7 +28,9 @@ namespace Ginásio_inscrições
             this.weight = weight;
             this.height = height;
             this.goal = goal;
-            this.plan = plan;
+            this.price = price;
+            this.classes = classes;
+            this.hasDiscont = hasDiscont;
         }
         public UserData()
         {
@@ -36,7 +40,9 @@ namespace Ginásio_inscrições
             this.weight = "";
             this.height = "";
             this.goal = "";
-            this.plan = "";
+            this.price = 0;
+            this.classes = 0;
+            this.hasDiscont = false;
         }
 
         public static void Load(UserData[] arr)

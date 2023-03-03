@@ -38,16 +38,9 @@ namespace Ginásio_inscrições
                 if (pHolder[i].username == login.nome)
                 {
                     pos = i;
-                    userInfo = new UserData(pHolder[i].username, pHolder[i].age, pHolder[i].gender, pHolder[i].weight, pHolder[i].height, pHolder[i].goal, pHolder[i].plan);
+                    userInfo = new UserData(pHolder[i].username, pHolder[i].age, pHolder[i].gender, pHolder[i].weight, pHolder[i].height, pHolder[i].goal, pHolder[i].price, pHolder[i].classes);
                     lblNome.Text = pHolder[i].username;
-                    if (pHolder[i].plan == "The Rock Silver(30€)")
-                    {
-                        lblValor.Text = "30€";
-                    }
-                    else if (pHolder[i].plan == "The Rock Gold (35€)")
-                    {
-                        lblValor.Text = "35€";
-                    }
+                    lblValor.Text = pHolder[i].price.ToString("0€");
                     return;
                 }
             }
@@ -104,7 +97,7 @@ namespace Ginásio_inscrições
             }*/
             userInfo.weight = peso.ToString();
             dataGridView1.Rows.Add(peso,bodyFat);
-            dataGridView1.Rows[dataGridView1.Rows.Count-2].HeaderCell.Value = DateTime.Now.ToString("dd/MM/yyyy");
+            dataGridView1.Rows[dataGridView1.Rows.Count-1].HeaderCell.Value = DateTime.Now.ToString("dd/MM/yyyy");
 
 
         }

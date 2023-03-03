@@ -49,26 +49,25 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(441, 107);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(302, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(292, 68);
+            this.label1.Size = new System.Drawing.Size(197, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bem Vindo ";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Username,
             this.Column1});
-            this.dataGridView1.Location = new System.Drawing.Point(579, 274);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(386, 178);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 103;
-            this.dataGridView1.Size = new System.Drawing.Size(608, 311);
+            this.dataGridView1.Size = new System.Drawing.Size(405, 202);
             this.dataGridView1.TabIndex = 1;
             // 
             // Username
@@ -92,10 +91,9 @@
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(85, 331);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(57, 215);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 71);
+            this.button1.Size = new System.Drawing.Size(126, 46);
             this.button1.TabIndex = 2;
             this.button1.Text = "Alterar Dados da Conta";
             this.button1.UseVisualStyleBackColor = false;
@@ -105,10 +103,9 @@
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(297, 331);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(198, 215);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(189, 71);
+            this.button2.Size = new System.Drawing.Size(126, 46);
             this.button2.TabIndex = 3;
             this.button2.Text = "Adicionar Progresso";
             this.button2.UseVisualStyleBackColor = false;
@@ -119,10 +116,9 @@
             this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(85, 464);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Location = new System.Drawing.Point(57, 302);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(189, 71);
+            this.button3.Size = new System.Drawing.Size(126, 46);
             this.button3.TabIndex = 4;
             this.button3.Text = "Plano de Treino";
             this.button3.UseVisualStyleBackColor = false;
@@ -132,10 +128,9 @@
             this.button4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(297, 464);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Location = new System.Drawing.Point(198, 302);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(189, 71);
+            this.button4.Size = new System.Drawing.Size(126, 46);
             this.button4.TabIndex = 5;
             this.button4.Text = "Plano Alimentar";
             this.button4.UseVisualStyleBackColor = false;
@@ -145,10 +140,9 @@
             this.button5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(1037, 738);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button5.Location = new System.Drawing.Point(691, 480);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(189, 71);
+            this.button5.Size = new System.Drawing.Size(126, 46);
             this.button5.TabIndex = 6;
             this.button5.Text = "Terminar Sessão";
             this.button5.UseVisualStyleBackColor = false;
@@ -159,9 +153,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(1032, 692);
+            this.label2.Location = new System.Drawing.Point(684, 450);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 25);
+            this.label2.Size = new System.Drawing.Size(107, 17);
             this.label2.TabIndex = 7;
             this.label2.Text = "Valor Mensal:";
             // 
@@ -170,9 +165,10 @@
             this.lblValor.AutoSize = true;
             this.lblValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblValor.Location = new System.Drawing.Point(1176, 692);
+            this.lblValor.Location = new System.Drawing.Point(784, 450);
+            this.lblValor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(50, 25);
+            this.lblValor.Size = new System.Drawing.Size(34, 17);
             this.lblValor.TabIndex = 8;
             this.lblValor.Text = "%%";
             // 
@@ -182,21 +178,20 @@
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNome.Location = new System.Drawing.Point(706, 107);
-            this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNome.Location = new System.Drawing.Point(479, 26);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(109, 68);
+            this.lblNome.Size = new System.Drawing.Size(74, 45);
             this.lblNome.TabIndex = 9;
             this.lblNome.Text = "%%";
             // 
             // home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::Ginásio_inscrições.Properties.Resources.iron_machines_gym;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1285, 837);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(857, 544);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblValor);
             this.Controls.Add(this.label2);
@@ -208,7 +203,6 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "home";
             this.Text = "Home";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.home_FormClosed);
