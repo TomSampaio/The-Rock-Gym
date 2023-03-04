@@ -138,5 +138,17 @@
   <ItemGroup>
     <None Include="Resources\iron-machines-gym.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow light gym.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow light gym 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the rock type gym chains area.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plano de Treino.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

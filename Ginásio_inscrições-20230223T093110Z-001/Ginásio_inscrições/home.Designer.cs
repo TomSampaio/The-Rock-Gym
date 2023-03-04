@@ -40,7 +40,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblValor = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +51,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(453, 40);
+            this.label1.Location = new System.Drawing.Point(456, 88);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(292, 68);
@@ -64,12 +66,12 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Username,
             this.Column1});
-            this.dataGridView1.Location = new System.Drawing.Point(41, 380);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 341);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 103;
-            this.dataGridView1.Size = new System.Drawing.Size(635, 336);
+            this.dataGridView1.Size = new System.Drawing.Size(634, 356);
             this.dataGridView1.TabIndex = 1;
             // 
             // Username
@@ -93,7 +95,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(136, 245);
+            this.button1.Location = new System.Drawing.Point(95, 245);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(189, 71);
@@ -106,7 +108,7 @@
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(347, 245);
+            this.button2.Location = new System.Drawing.Point(365, 245);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(189, 71);
@@ -120,7 +122,7 @@
             this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(772, 256);
+            this.button3.Location = new System.Drawing.Point(814, 245);
             this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(189, 71);
@@ -133,7 +135,7 @@
             this.button4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(983, 256);
+            this.button4.Location = new System.Drawing.Point(1074, 245);
             this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(189, 71);
@@ -146,7 +148,7 @@
             this.button5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(1073, 737);
+            this.button5.Location = new System.Drawing.Point(1178, 775);
             this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(189, 71);
@@ -160,7 +162,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(1063, 691);
+            this.label2.Location = new System.Drawing.Point(1168, 729);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(146, 25);
             this.label2.TabIndex = 7;
@@ -171,7 +173,7 @@
             this.lblValor.AutoSize = true;
             this.lblValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblValor.Location = new System.Drawing.Point(1213, 691);
+            this.lblValor.Location = new System.Drawing.Point(1318, 729);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(50, 25);
             this.lblValor.TabIndex = 8;
@@ -183,21 +185,32 @@
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNome.Location = new System.Drawing.Point(718, 40);
+            this.lblNome.Location = new System.Drawing.Point(721, 88);
             this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(109, 68);
             this.lblNome.TabIndex = 9;
             this.lblNome.Text = "%%";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Ginásio_inscrições.Properties.Resources.Plano_de_Treino;
+            this.pictureBox1.Location = new System.Drawing.Point(733, 341);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(621, 356);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BackgroundImage = global::Ginásio_inscrições.Properties.Resources.iron_machines_gym;
+            this.BackgroundImage = global::Ginásio_inscrições.Properties.Resources.the_rock_type_gym_chains_area;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1323, 837);
+            this.ClientSize = new System.Drawing.Size(1446, 880);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblValor);
             this.Controls.Add(this.label2);
@@ -215,6 +228,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.home_FormClosed);
             this.Load += new System.EventHandler(this.home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,5 +248,6 @@
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Username;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
