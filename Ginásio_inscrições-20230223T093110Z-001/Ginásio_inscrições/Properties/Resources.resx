@@ -118,22 +118,55 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="linha separadora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linha separadora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iron-rev" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iron-rev.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plano de Treino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plano de Treino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="322766-Dwayne-Johnson-Gym-Workout-4K-iphone-wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\322766-Dwayne-Johnson-Gym-Workout-4K-iphone-wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dark BG Gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dark BG Gym.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gym bg 9887 edited1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gym bg 9887 edited1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gym-Logo-Graphics-1-28" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gym-Logo-Graphics-1-28.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="linha separadora" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\linha separadora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="322766-Dwayne-Johnson-Gym-Workout-4K-iphone-wallpaper w.out bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\322766-Dwayne-Johnson-Gym-Workout-4K-iphone-wallpaper w.out bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gym bg 9887 edited" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gym bg 9887 edited.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iron-rev1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iron-rev1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iron-machines-gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iron-machines-gym.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="the rock type gym chains area" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\the rock type gym chains area.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yellow light gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yellow light gym.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yellow light gym 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yellow light gym 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="322766-Dwayne-Johnson-Gym-Workout-4K-iphone-wallpaper no bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\322766-Dwayne-Johnson-Gym-Workout-4K-iphone-wallpaper no bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Gym Logo w border" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gym Logo w border.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iron-machines-gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iron-machines-gym.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Plano Alimentar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plano Alimentar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
