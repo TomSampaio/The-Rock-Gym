@@ -150,5 +150,11 @@
   <ItemGroup>
     <None Include="Resources\Plano de Treino.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\322766-Dwayne-Johnson-Gym-Workout-4K-iphone-wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dark BG Gym.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

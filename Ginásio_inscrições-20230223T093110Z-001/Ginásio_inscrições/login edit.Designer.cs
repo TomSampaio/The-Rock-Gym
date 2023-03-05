@@ -52,7 +52,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Wheat;
-            this.label12.Location = new System.Drawing.Point(494, 390);
+            this.label12.Location = new System.Drawing.Point(479, 388);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(74, 25);
@@ -66,7 +66,7 @@
             "Cycling",
             "Pilates",
             "KickBox"});
-            this.checkedListBox1.Location = new System.Drawing.Point(598, 390);
+            this.checkedListBox1.Location = new System.Drawing.Point(583, 388);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(160, 73);
             this.checkedListBox1.TabIndex = 48;
@@ -78,7 +78,7 @@
             this.cmbPlan.Items.AddRange(new object[] {
             "The Rock Gold (35€)",
             "The Rock Silver (30€)"});
-            this.cmbPlan.Location = new System.Drawing.Point(598, 295);
+            this.cmbPlan.Location = new System.Drawing.Point(583, 293);
             this.cmbPlan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbPlan.Name = "cmbPlan";
             this.cmbPlan.Size = new System.Drawing.Size(160, 28);
@@ -92,7 +92,7 @@
             "Ganhar músculo",
             "Perder peso",
             "Melhorar saúde"});
-            this.cmbGoal.Location = new System.Drawing.Point(598, 228);
+            this.cmbGoal.Location = new System.Drawing.Point(583, 226);
             this.cmbGoal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbGoal.Name = "cmbGoal";
             this.cmbGoal.Size = new System.Drawing.Size(160, 28);
@@ -106,7 +106,7 @@
             this.cmbGender.Items.AddRange(new object[] {
             "Masculino",
             "Feminino"});
-            this.cmbGender.Location = new System.Drawing.Point(226, 283);
+            this.cmbGender.Location = new System.Drawing.Point(214, 285);
             this.cmbGender.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(160, 28);
@@ -115,7 +115,7 @@
             // txtHeight
             // 
             this.txtHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHeight.Location = new System.Drawing.Point(226, 435);
+            this.txtHeight.Location = new System.Drawing.Point(214, 437);
             this.txtHeight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(160, 30);
@@ -127,7 +127,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Wheat;
-            this.label9.Location = new System.Drawing.Point(439, 298);
+            this.label9.Location = new System.Drawing.Point(424, 296);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(142, 25);
@@ -140,7 +140,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Wheat;
-            this.label10.Location = new System.Drawing.Point(482, 231);
+            this.label10.Location = new System.Drawing.Point(467, 229);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(99, 25);
@@ -153,7 +153,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Wheat;
-            this.label11.Location = new System.Drawing.Point(79, 438);
+            this.label11.Location = new System.Drawing.Point(67, 440);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(126, 25);
@@ -163,7 +163,7 @@
             // txtWeight
             // 
             this.txtWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWeight.Location = new System.Drawing.Point(226, 356);
+            this.txtWeight.Location = new System.Drawing.Point(214, 358);
             this.txtWeight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(160, 30);
@@ -172,7 +172,7 @@
             // txtAge
             // 
             this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAge.Location = new System.Drawing.Point(226, 210);
+            this.txtAge.Location = new System.Drawing.Point(214, 212);
             this.txtAge.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(160, 30);
@@ -184,7 +184,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Wheat;
-            this.label6.Location = new System.Drawing.Point(86, 361);
+            this.label6.Location = new System.Drawing.Point(74, 363);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(113, 25);
@@ -197,7 +197,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Wheat;
-            this.label7.Location = new System.Drawing.Point(109, 284);
+            this.label7.Location = new System.Drawing.Point(97, 286);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 25);
@@ -210,7 +210,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Wheat;
-            this.label8.Location = new System.Drawing.Point(125, 214);
+            this.label8.Location = new System.Drawing.Point(113, 216);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 25);
@@ -223,7 +223,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Wheat;
-            this.label1.Location = new System.Drawing.Point(204, 43);
+            this.label1.Location = new System.Drawing.Point(215, 75);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(495, 60);
