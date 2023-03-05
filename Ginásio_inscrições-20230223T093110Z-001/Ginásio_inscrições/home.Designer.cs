@@ -40,9 +40,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblValor = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pic_planotreino = new System.Windows.Forms.PictureBox();
+            this.pic_planoalim = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_planotreino)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_planoalim)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -129,6 +131,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Plano de Treino";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -142,6 +145,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "Plano Alimentar";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -194,16 +198,27 @@
             this.lblNome.TabIndex = 9;
             this.lblNome.Text = "%%";
             // 
-            // pictureBox1
+            // pic_planotreino
             // 
-            this.pictureBox1.Image = global::Ginásio_inscrições.Properties.Resources.Plano_de_Treino;
-            this.pictureBox1.Location = new System.Drawing.Point(911, 341);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(632, 356);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
+            this.pic_planotreino.Image = global::Ginásio_inscrições.Properties.Resources.Plano_de_Treino;
+            this.pic_planotreino.Location = new System.Drawing.Point(911, 341);
+            this.pic_planotreino.Name = "pic_planotreino";
+            this.pic_planotreino.Size = new System.Drawing.Size(632, 356);
+            this.pic_planotreino.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_planotreino.TabIndex = 10;
+            this.pic_planotreino.TabStop = false;
+            this.pic_planotreino.Visible = false;
+            // 
+            // pic_planoalim
+            // 
+            this.pic_planoalim.Image = global::Ginásio_inscrições.Properties.Resources.Plano_Alimentar;
+            this.pic_planoalim.Location = new System.Drawing.Point(911, 341);
+            this.pic_planoalim.Name = "pic_planoalim";
+            this.pic_planoalim.Size = new System.Drawing.Size(632, 356);
+            this.pic_planoalim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_planoalim.TabIndex = 11;
+            this.pic_planoalim.TabStop = false;
+            this.pic_planoalim.Visible = false;
             // 
             // home
             // 
@@ -212,7 +227,8 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::Ginásio_inscrições.Properties.Resources.Dark_BG_Gym;
             this.ClientSize = new System.Drawing.Size(1611, 942);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pic_planoalim);
+            this.Controls.Add(this.pic_planotreino);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblValor);
             this.Controls.Add(this.label2);
@@ -230,7 +246,8 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.home_FormClosed);
             this.Load += new System.EventHandler(this.home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_planotreino)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_planoalim)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,6 +267,7 @@
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Username;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pic_planotreino;
+        private System.Windows.Forms.PictureBox pic_planoalim;
     }
 }

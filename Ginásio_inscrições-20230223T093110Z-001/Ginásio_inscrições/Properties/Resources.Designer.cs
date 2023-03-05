@@ -73,6 +73,26 @@ namespace Ginásio_inscrições.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _322766_Dwayne_Johnson_Gym_Workout_4K_iphone_wallpaper_no_bg {
+            get {
+                object obj = ResourceManager.GetObject("322766-Dwayne-Johnson-Gym-Workout-4K-iphone-wallpaper no bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _322766_Dwayne_Johnson_Gym_Workout_4K_iphone_wallpaper_w_out_bg {
+            get {
+                object obj = ResourceManager.GetObject("322766-Dwayne-Johnson-Gym-Workout-4K-iphone-wallpaper w.out bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Dark_BG_Gym {
             get {
                 object obj = ResourceManager.GetObject("Dark BG Gym", resourceCulture);
@@ -156,6 +176,16 @@ namespace Ginásio_inscrições.Properties {
         internal static System.Drawing.Bitmap linha_separadora {
             get {
                 object obj = ResourceManager.GetObject("linha separadora", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plano_Alimentar {
+            get {
+                object obj = ResourceManager.GetObject("Plano Alimentar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

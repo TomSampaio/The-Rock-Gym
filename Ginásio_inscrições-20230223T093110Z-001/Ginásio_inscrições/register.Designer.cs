@@ -392,7 +392,7 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label17.Location = new System.Drawing.Point(852, 603);
+            this.label17.Location = new System.Drawing.Point(859, 618);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(229, 22);
             this.label17.TabIndex = 37;
@@ -404,7 +404,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label16.Location = new System.Drawing.Point(852, 456);
+            this.label16.Location = new System.Drawing.Point(859, 471);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(451, 88);
             this.label16.TabIndex = 36;
@@ -417,7 +417,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label15.Location = new System.Drawing.Point(852, 251);
+            this.label15.Location = new System.Drawing.Point(859, 266);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(387, 154);
             this.label15.TabIndex = 35;
@@ -431,7 +431,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label14.Location = new System.Drawing.Point(1096, 62);
+            this.label14.Location = new System.Drawing.Point(1123, 62);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(165, 60);
@@ -462,10 +462,11 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Ginásio_inscrições.Properties.Resources._322766_Dwayne_Johnson_Gym_Workout_4K_iphone_wallpaper;
-            this.pictureBox2.Location = new System.Drawing.Point(1319, 214);
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Ginásio_inscrições.Properties.Resources._322766_Dwayne_Johnson_Gym_Workout_4K_iphone_wallpaper_w_out_bg;
+            this.pictureBox2.Location = new System.Drawing.Point(1312, 212);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(254, 474);
+            this.pictureBox2.Size = new System.Drawing.Size(264, 479);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 39;
             this.pictureBox2.TabStop = false;

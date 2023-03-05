@@ -94,7 +94,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Ginásio_inscrições.Properties.Resources.Gym_Logo_w_border;
-            this.pictureBox1.Location = new System.Drawing.Point(884, 108);
+            this.pictureBox1.Location = new System.Drawing.Point(887, 91);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(322, 326);

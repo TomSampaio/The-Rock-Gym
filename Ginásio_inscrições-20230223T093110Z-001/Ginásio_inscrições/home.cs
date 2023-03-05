@@ -115,5 +115,31 @@ namespace Ginásio_inscrições
 
             DadosTabela.Save(dTable);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (pic_planoalim.Visible == true)
+            {
+                pic_planoalim.Visible = false;
+                pic_planotreino.Visible = true;
+            }
+            else
+            {
+                pic_planotreino.Visible = true;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (pic_planotreino.Visible == true)
+            {
+                pic_planotreino.Visible = false;
+                pic_planoalim.Visible = true;
+            }
+            else
+            {
+                pic_planoalim.Visible = true; 
+            }
+        }
     }
 }
