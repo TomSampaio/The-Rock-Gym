@@ -19,7 +19,7 @@ namespace Ginásio_inscrições
         {
             InitializeComponent();
         }
-        DadosTabela[] dTable;
+        DadosTabela[] dTable = new DadosTabela[0];
         UserData[] pHolder;
         UserData userInfo;
         int pos = 0;
@@ -31,7 +31,7 @@ namespace Ginásio_inscrições
             FileStream fStr = new FileStream(file, FileMode.Open);
             pHolder = (UserData[])fSrl.Deserialize(fStr);
             fStr.Close();
-            Console.WriteLine("information loaded");
+            Console.WriteLine("information loadedUser");
 
             for (int i = 0; i < pHolder.Length; i++)
             {
@@ -45,15 +45,15 @@ namespace Ginásio_inscrições
                 }
             }
 
-            string fileT = @"DadosTabela.xml";
+            string fileTable = @"DadosTabela.xml";
 
-            if (File.Exists(fileT))
+            if (File.Exists(fileTable))
             {
                 XmlSerializer fSrlT = new XmlSerializer(typeof(DadosTabela[]));
-                FileStream fStrT = new FileStream(file, FileMode.Open);
+                FileStream fStrT = new FileStream(fileTable, FileMode.Open);
                 dTable = (DadosTabela[])fSrlT.Deserialize(fStrT);
                 fStrT.Close();
-                Console.WriteLine("information loaded");
+                Console.WriteLine("information loadedTable");
                 
                 for (int i = 0; i < dTable.Length; i++)
                 {
@@ -61,6 +61,7 @@ namespace Ginásio_inscrições
                     {
                         dataGridView1.Rows.Add(dTable[i].weight, dTable[i].bodyFat);
                         dataGridView1.Rows[dataGridView1.Rows.Count - 1].HeaderCell.Value = dTable[i].date;
+                        Console.WriteLine("Confirm");
                     }
                 }
             }
