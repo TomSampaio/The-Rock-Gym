@@ -227,6 +227,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::Ginásio_inscrições.Properties.Resources.Dark_BG_Gym;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1611, 942);
             this.Controls.Add(this.pic_planoalim);
             this.Controls.Add(this.pic_planotreino);

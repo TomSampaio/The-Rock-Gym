@@ -476,6 +476,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Ginásio_inscrições.Properties.Resources.gym_bg_9887_edited1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1600, 897);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtBoxConv);
