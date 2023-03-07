@@ -39,31 +39,31 @@ namespace Ginásio_inscrições
                 {
                     price += checkedListBox1.CheckedItems.Count * 5;
                 }
-                if ((string)checkedListBox1.SelectedItem == "Cycling" && (string)checkedListBox1.SelectedItem == "Pilates" && (string)checkedListBox1.SelectedItem == "KickBox")
+                if (checkedListBox1.GetItemChecked(0) && checkedListBox1.GetItemChecked(1) && checkedListBox1.GetItemChecked(2))
                 {
                     classes = 3;
                 }
-                else if ((string)checkedListBox1.SelectedItem == "Pilates" && (string)checkedListBox1.SelectedItem == "KickBox")
+                else if (checkedListBox1.GetItemChecked(1) && checkedListBox1.GetItemChecked(2))
                 {
                     classes = 2.2;
                 }
-                else if ((string)checkedListBox1.SelectedItem == "Cycling" && (string)checkedListBox1.SelectedItem == "Pilates")
+                else if (checkedListBox1.GetItemChecked(0) && checkedListBox1.GetItemChecked(1))
                 {
                     classes = 2.1;
                 }
-                else if ((string)checkedListBox1.SelectedItem == "Cycling" && (string)checkedListBox1.SelectedItem == "KickBox")
+                else if (checkedListBox1.GetItemChecked(0) && checkedListBox1.GetItemChecked(2))
                 {
                     classes = 2.3;
                 }
-                else if ((string)checkedListBox1.SelectedItem == "KickBox")
+                else if (checkedListBox1.GetItemChecked(2))
                 {
                     classes = 1.3;
                 }
-                else if ((string)checkedListBox1.SelectedItem == "Pilates")
+                else if (checkedListBox1.GetItemChecked(1))
                 {
                     classes = 1.2;
                 }
-                else if ((string)checkedListBox1.SelectedItem == "Cycling")
+                else if (checkedListBox1.GetItemChecked(0))
                 {
                     classes = 1.1;
                 }
@@ -163,7 +163,7 @@ namespace Ginásio_inscrições
                                 cmbPlan.Text = "The Rock Silver (30€)";
                             }
                         }
-                        else if (pHolder[i].classes > 1 && pHolder[i].classes < 2)
+                        else if (pHolder[i].classes < 2)
                         {
                             if (pHolder[i].price == 35)
                             {
@@ -214,7 +214,7 @@ namespace Ginásio_inscrições
                         checkedListBox1.SetItemChecked(1, true);
                         checkedListBox1.SetItemChecked(2, true);
                     }
-                    else if (pHolder[i].classes == 2.1)
+                    else if (pHolder[i].classes == 2.2)
                     {
                         checkedListBox1.SetItemChecked(0, true);
                         checkedListBox1.SetItemChecked(2, true);
