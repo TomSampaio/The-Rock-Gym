@@ -22,7 +22,7 @@ namespace Ginásio_inscrições
         DadosTabela[] dTable = new DadosTabela[0];
         UserData[] pHolder;
         UserData userInfo;
-        int pos = 0;
+        static int pos = 0;
         private void home_Load(object sender, EventArgs e)
         {
             string file = @"UserData.xml";
@@ -41,7 +41,7 @@ namespace Ginásio_inscrições
                     userInfo = new UserData(pHolder[i].username, pHolder[i].age, pHolder[i].gender, pHolder[i].weight, pHolder[i].height, pHolder[i].goal, pHolder[i].price, pHolder[i].classes, pHolder[i].hasDiscont);
                     lblNome.Text = pHolder[i].username;
                     lblValor.Text = pHolder[i].price.ToString("0€");
-                    return;
+                    break;
                 }
             }
 
