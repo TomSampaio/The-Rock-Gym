@@ -79,7 +79,10 @@ namespace Ginásio_inscrições
             while (true)
             {
                 if (double.TryParse(Interaction.InputBox("Introduza o peso atual"), out peso))
+                {
+                    userInfo.weight = peso.ToString();
                     break;
+                }
                 else
                     continue;
             }
@@ -116,6 +119,8 @@ namespace Ginásio_inscrições
             }
             Console.WriteLine(dataGridView1.Rows[0].HeaderCell.Value.ToString());
             DadosTabela.Save(dTable);
+            pHolder[pos] = userInfo;
+            UserData.Save(pHolder);
             var form = new Form1();
             form.Show();
             this.Hide();
@@ -123,6 +128,17 @@ namespace Ginásio_inscrições
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            Array.Resize<DadosTabela>(ref dTable, dataGridView1.Rows.Count);
+
+            for (int i = 0; i < dTable.Length; i++)
+            {
+                dTable[i] = new DadosTabela(lblNome.Text, dataGridView1.Rows[i].HeaderCell.Value.ToString(), (double)dataGridView1.Rows[i].Cells[0].Value, (double)dataGridView1.Rows[i].Cells[1].Value);
+            }
+            Console.WriteLine(dataGridView1.Rows[0].HeaderCell.Value.ToString());
+            DadosTabela.Save(dTable);
+            pHolder[pos] = userInfo;
+            UserData.Save(pHolder);
             var form = new login_edit();
             form.Show();
             this.Hide();

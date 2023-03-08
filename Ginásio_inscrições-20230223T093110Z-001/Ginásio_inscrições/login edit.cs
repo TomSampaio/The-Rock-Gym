@@ -214,7 +214,7 @@ namespace Ginásio_inscrições
                         checkedListBox1.SetItemChecked(1, true);
                         checkedListBox1.SetItemChecked(2, true);
                     }
-                    else if (pHolder[i].classes == 2.2)
+                    else if (pHolder[i].classes == 2.3)
                     {
                         checkedListBox1.SetItemChecked(0, true);
                         checkedListBox1.SetItemChecked(2, true);
