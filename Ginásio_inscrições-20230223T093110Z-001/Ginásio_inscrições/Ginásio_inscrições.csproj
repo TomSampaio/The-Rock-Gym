@@ -162,5 +162,14 @@
   <ItemGroup>
     <None Include="Resources\gym bg 9887 edited1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\322766-Dwayne-Johnson-Gym-Workout-4K-iphone-wallpaper no bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\322766-Dwayne-Johnson-Gym-Workout-4K-iphone-wallpaper w.out bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plano Alimentar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

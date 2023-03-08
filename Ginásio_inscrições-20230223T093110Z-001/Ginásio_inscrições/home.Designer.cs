@@ -53,9 +53,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(423, 53);
+            this.label1.Location = new System.Drawing.Point(635, 82);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 45);
+            this.label1.Size = new System.Drawing.Size(292, 68);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bem Vindo ";
             // 
@@ -67,11 +68,12 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Username,
             this.Column1});
-            this.dataGridView1.Location = new System.Drawing.Point(65, 222);
+            this.dataGridView1.Location = new System.Drawing.Point(97, 341);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 103;
-            this.dataGridView1.Size = new System.Drawing.Size(423, 231);
+            this.dataGridView1.Size = new System.Drawing.Size(634, 356);
             this.dataGridView1.TabIndex = 1;
             // 
             // Username
@@ -95,9 +97,10 @@
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(109, 159);
+            this.button1.Location = new System.Drawing.Point(164, 245);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 46);
+            this.button1.Size = new System.Drawing.Size(189, 71);
             this.button1.TabIndex = 2;
             this.button1.Text = "Alterar Dados da Conta";
             this.button1.UseVisualStyleBackColor = false;
@@ -108,9 +111,10 @@
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(289, 159);
+            this.button2.Location = new System.Drawing.Point(434, 245);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 46);
+            this.button2.Size = new System.Drawing.Size(189, 71);
             this.button2.TabIndex = 3;
             this.button2.Text = "Adicionar Progresso";
             this.button2.UseVisualStyleBackColor = false;
@@ -121,9 +125,10 @@
             this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(664, 159);
+            this.button3.Location = new System.Drawing.Point(996, 245);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 46);
+            this.button3.Size = new System.Drawing.Size(189, 71);
             this.button3.TabIndex = 4;
             this.button3.Text = "Plano de Treino";
             this.button3.UseVisualStyleBackColor = false;
@@ -134,9 +139,10 @@
             this.button4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(851, 159);
+            this.button4.Location = new System.Drawing.Point(1277, 245);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(126, 46);
+            this.button4.Size = new System.Drawing.Size(189, 71);
             this.button4.TabIndex = 5;
             this.button4.Text = "Plano Alimentar";
             this.button4.UseVisualStyleBackColor = false;
@@ -147,9 +153,10 @@
             this.button5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(891, 546);
+            this.button5.Location = new System.Drawing.Point(1337, 840);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(126, 46);
+            this.button5.Size = new System.Drawing.Size(189, 71);
             this.button5.TabIndex = 6;
             this.button5.Text = "Terminar Sessão";
             this.button5.UseVisualStyleBackColor = false;
@@ -161,10 +168,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(888, 516);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(1332, 794);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 17);
+            this.label2.Size = new System.Drawing.Size(146, 25);
             this.label2.TabIndex = 7;
             this.label2.Text = "Valor Mensal:";
             // 
@@ -174,10 +180,9 @@
             this.lblValor.BackColor = System.Drawing.Color.Transparent;
             this.lblValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblValor.Location = new System.Drawing.Point(985, 516);
-            this.lblValor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblValor.Location = new System.Drawing.Point(1477, 794);
             this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(34, 17);
+            this.lblValor.Size = new System.Drawing.Size(50, 25);
             this.lblValor.TabIndex = 8;
             this.lblValor.Text = "%%";
             // 
@@ -187,19 +192,19 @@
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNome.Location = new System.Drawing.Point(599, 53);
+            this.lblNome.Location = new System.Drawing.Point(899, 82);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(74, 45);
+            this.lblNome.Size = new System.Drawing.Size(109, 68);
             this.lblNome.TabIndex = 9;
             this.lblNome.Text = "%%";
             // 
             // pic_planotreino
             // 
             this.pic_planotreino.Image = global::Ginásio_inscrições.Properties.Resources.Plano_de_Treino;
-            this.pic_planotreino.Location = new System.Drawing.Point(607, 222);
-            this.pic_planotreino.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic_planotreino.Location = new System.Drawing.Point(911, 341);
             this.pic_planotreino.Name = "pic_planotreino";
-            this.pic_planotreino.Size = new System.Drawing.Size(421, 231);
+            this.pic_planotreino.Size = new System.Drawing.Size(632, 356);
             this.pic_planotreino.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_planotreino.TabIndex = 10;
             this.pic_planotreino.TabStop = false;
@@ -208,10 +213,9 @@
             // pic_planoalim
             // 
             this.pic_planoalim.Image = global::Ginásio_inscrições.Properties.Resources.Plano_Alimentar;
-            this.pic_planoalim.Location = new System.Drawing.Point(607, 222);
-            this.pic_planoalim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic_planoalim.Location = new System.Drawing.Point(911, 341);
             this.pic_planoalim.Name = "pic_planoalim";
-            this.pic_planoalim.Size = new System.Drawing.Size(421, 231);
+            this.pic_planoalim.Size = new System.Drawing.Size(632, 356);
             this.pic_planoalim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_planoalim.TabIndex = 11;
             this.pic_planoalim.TabStop = false;
@@ -219,11 +223,12 @@
             // 
             // home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::Ginásio_inscrições.Properties.Resources.Dark_BG_Gym;
-            this.ClientSize = new System.Drawing.Size(1074, 612);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1611, 942);
             this.Controls.Add(this.pic_planoalim);
             this.Controls.Add(this.pic_planotreino);
             this.Controls.Add(this.lblNome);
@@ -237,11 +242,11 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "home";
             this.Text = "Home";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.home_FormClosed);
             this.Load += new System.EventHandler(this.home_Load);
-            this.Shown += new System.EventHandler(this.home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_planotreino)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_planoalim)).EndInit();
