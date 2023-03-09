@@ -23,6 +23,7 @@ namespace Ginásio_inscrições
         UserData[] pHolder;
         UserData userInfo;
         static int pos = 0;
+        bool isPremium = false;
         private void home_Load(object sender, EventArgs e)
         {
             string file = @"UserData.xml";
@@ -41,6 +42,28 @@ namespace Ginásio_inscrições
                     userInfo = new UserData(pHolder[i].username, pHolder[i].age, pHolder[i].gender, pHolder[i].weight, pHolder[i].height, pHolder[i].goal, pHolder[i].price, pHolder[i].classes, pHolder[i].hasDiscont);
                     lblNome.Text = pHolder[i].username;
                     lblValor.Text = pHolder[i].price.ToString("0€");
+                    if (pHolder[i].hasDiscont)
+                    {
+                        if (pHolder[i].price % 2 == 0)
+                        {
+                            isPremium = true;
+                        }
+                        else
+                        {
+                            isPremium = false;
+                        }
+                    }
+                    else
+                    {
+                        if (pHolder[i].price % 2 == 0)
+                        {
+                            isPremium = false;
+                        }
+                        else
+                        {
+                            isPremium = true;
+                        }
+                    }
                     break;
                 }
             }
@@ -111,14 +134,16 @@ namespace Ginásio_inscrições
         {
             //terminar sessao
 
-            Array.Resize<DadosTabela>(ref dTable, dataGridView1.Rows.Count);
-            
-            for (int i = 0; i < dTable.Length; i++)
+            if (dataGridView1.RowCount > 0)
             {
-                dTable[i] = new DadosTabela(lblNome.Text, dataGridView1.Rows[i].HeaderCell.Value.ToString(), (double)dataGridView1.Rows[i].Cells[0].Value, (double)dataGridView1.Rows[i].Cells[1].Value);
+                Array.Resize<DadosTabela>(ref dTable, dataGridView1.Rows.Count);
+
+                for (int i = 0; i < dTable.Length; i++)
+                {
+                    dTable[i] = new DadosTabela(lblNome.Text, dataGridView1.Rows[i].HeaderCell.Value.ToString(), (double)dataGridView1.Rows[i].Cells[0].Value, (double)dataGridView1.Rows[i].Cells[1].Value);
+                }
+                DadosTabela.Save(dTable);
             }
-            Console.WriteLine(dataGridView1.Rows[0].HeaderCell.Value.ToString());
-            DadosTabela.Save(dTable);
             pHolder[pos] = userInfo;
             UserData.Save(pHolder);
             var form = new Form1();
@@ -128,15 +153,16 @@ namespace Ginásio_inscrições
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            Array.Resize<DadosTabela>(ref dTable, dataGridView1.Rows.Count);
-
-            for (int i = 0; i < dTable.Length; i++)
+            if (dataGridView1.RowCount > 0)
             {
-                dTable[i] = new DadosTabela(lblNome.Text, dataGridView1.Rows[i].HeaderCell.Value.ToString(), (double)dataGridView1.Rows[i].Cells[0].Value, (double)dataGridView1.Rows[i].Cells[1].Value);
+                Array.Resize<DadosTabela>(ref dTable, dataGridView1.Rows.Count);
+
+                for (int i = 0; i < dTable.Length; i++)
+                {
+                    dTable[i] = new DadosTabela(lblNome.Text, dataGridView1.Rows[i].HeaderCell.Value.ToString(), (double)dataGridView1.Rows[i].Cells[0].Value, (double)dataGridView1.Rows[i].Cells[1].Value);
+                }
+                DadosTabela.Save(dTable);
             }
-            Console.WriteLine(dataGridView1.Rows[0].HeaderCell.Value.ToString());
-            DadosTabela.Save(dTable);
             pHolder[pos] = userInfo;
             UserData.Save(pHolder);
             var form = new login_edit();
@@ -151,6 +177,10 @@ namespace Ginásio_inscrições
                 pic_planoalim.Visible = false;
                 pic_planotreino.Visible = true;
             }
+            else if (pic_planotreino.Visible == true)
+            {
+                pic_planotreino.Visible = false;
+            }
             else
             {
                 pic_planotreino.Visible = true;
@@ -159,14 +189,26 @@ namespace Ginásio_inscrições
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (pic_planotreino.Visible == true)
+            if (isPremium)
             {
-                pic_planotreino.Visible = false;
-                pic_planoalim.Visible = true;
+                if (pic_planotreino.Visible == true)
+                {
+                    pic_planotreino.Visible = false;
+                    pic_planoalim.Visible = true;
+                }
+                else if (pic_planoalim.Visible == true)
+                {
+                    pic_planoalim.Visible = false;
+                }
+                else
+                {
+                    pic_planoalim.Visible = true;
+                }
             }
             else
             {
-                pic_planoalim.Visible = true; 
+                MessageBox.Show("Mude de plano para debloquear esta função");
+                return;
             }
         }
     }

@@ -51,11 +51,11 @@ namespace Ginásio_inscrições
                 {
                     if (price == 35)
                     {
-                        price += (checkedListBox1.CheckedItems.Count - 1) * 5;
+                        price += (checkedListBox1.CheckedItems.Count - 1) * 4;
                     }
                     else
                     {
-                        price += checkedListBox1.CheckedItems.Count * 5;
+                        price += checkedListBox1.CheckedItems.Count * 4;
                     }
                     if ((string)checkedListBox1.SelectedItem == "Cycling" && (string)checkedListBox1.SelectedItem == "Pilates" && (string)checkedListBox1.SelectedItem == "KickBox")
                     {

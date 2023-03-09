@@ -72,7 +72,7 @@ namespace Ginásio_inscrições
             {
                 if (pHolder[i].username == login.nome)
                 {
-                    pHolder[i] = new UserData(login.nome, txtAge.Text, cmbGender.Text, pHolder[i].weight, txtHeight.Text, cmbGoal.Text, price, classes, pHolder[i].hasDiscont);
+                    pHolder[i] = new UserData(login.nome, txtAge.Text, pHolder[i].gender, pHolder[i].weight, txtHeight.Text, cmbGoal.Text, price, classes, pHolder[i].hasDiscont);
                     break;
                 }
             }
@@ -99,102 +99,31 @@ namespace Ginásio_inscrições
             {
                 if (pHolder[i].username == login.nome)
                 {
+                    cmbPlan.Text = "The Rock Silver (30€)";
+                    cmbPlan.Text = "The Rock Gold (35€)";
                     txtAge.Text = pHolder[i].age;
                     txtHeight.Text = pHolder[i].height;
-                    cmbGender.Text = pHolder[i].gender;
                     cmbGoal.Text = pHolder[i].goal;
                     if (pHolder[i].hasDiscont)
                     {
-                        if (pHolder[i].classes == 0)
+                        if (pHolder[i].price % 2 == 0)
                         {
-                            if (pHolder[i].price + 5 == 35)
-                            {
-                                cmbPlan.Text = "The Rock Gold (35€)";
-                            }
-                            else if (pHolder[i].price + 5 == 30)
-                            {
-                                cmbPlan.Text = "The Rock Silver (30€)";
-                            }
+                            cmbPlan.Text = "The Rock Gold (35€)";
                         }
-                        else if (pHolder[i].classes > 1 && pHolder[i].classes < 2)
+                        else
                         {
-                            if (pHolder[i].price + 5 == 35)
-                            {
-                                cmbPlan.Text = "The Rock Gold (35€)";
-                            }
-                            else if (pHolder[i].price + 5 - 5 == 30)
-                            {
-                                cmbPlan.Text = "The Rock Silver (30€)";
-                            }
-                        }
-                        else if (pHolder[i].classes > 2 && pHolder[i].classes < 3)
-                        {
-                            if (pHolder[i].price + 5 - 5 == 35)
-                            {
-                                cmbPlan.Text = "The Rock Gold (35€)";
-                            }
-                            else if (pHolder[i].price + 5 - 10 == 30)
-                            {
-                                cmbPlan.Text = "The Rock Silver (30€)";
-                            }
-                        }
-                        else if (pHolder[i].classes == 3)
-                        {
-                            if (pHolder[i].price + 5 - 10 == 35)
-                            {
-                                cmbPlan.Text = "The Rock Gold (35€)";
-                            }
-                            else if (pHolder[i].price + 5 - 15 == 30)
-                            {
-                                cmbPlan.Text = "The Rock Silver (30€)";
-                            }
+                            cmbPlan.Text = "The Rock Silver (30€)";
                         }
                     }
                     else
                     {
-                        if (pHolder[i].classes == 0)
+                        if (pHolder[i].price % 2 == 0)
                         {
-                            if (pHolder[i].price == 35)
-                            {
-                                cmbPlan.Text = "The Rock Gold (35€)";
-                            }
-                            else if (pHolder[i].price == 30)
-                            {
-                                cmbPlan.Text = "The Rock Silver (30€)";
-                            }
+                            cmbPlan.Text = "The Rock Silver (30€)";
                         }
-                        else if (pHolder[i].classes < 2)
+                        else
                         {
-                            if (pHolder[i].price == 35)
-                            {
-                                cmbPlan.Text = "The Rock Gold (35€)";
-                            }
-                            else if (pHolder[i].price - 5 == 30)
-                            {
-                                cmbPlan.Text = "The Rock Silver (30€)";
-                            }
-                        }
-                        else if (pHolder[i].classes > 2 && pHolder[i].classes < 3)
-                        {
-                            if (pHolder[i].price - 5 == 35)
-                            {
-                                cmbPlan.Text = "The Rock Gold (35€)";
-                            }
-                            else if (pHolder[i].price - 10 == 30)
-                            {
-                                cmbPlan.Text = "The Rock Silver (30€)";
-                            }
-                        }
-                        else if (pHolder[i].classes == 3)
-                        {
-                            if (pHolder[i].price - 10 == 35)
-                            {
-                                cmbPlan.Text = "The Rock Gold (35€)";
-                            }
-                            else if (pHolder[i].price - 15 == 30)
-                            {
-                                cmbPlan.Text = "The Rock Silver (30€)";
-                            }
+                            cmbPlan.Text = "The Rock Gold (35€)";
                         }
                     }
 
