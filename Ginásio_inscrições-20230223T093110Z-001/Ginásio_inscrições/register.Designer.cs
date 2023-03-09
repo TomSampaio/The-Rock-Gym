@@ -355,7 +355,8 @@
             this.cmbDiscount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDiscount.FormattingEnabled = true;
             this.cmbDiscount.Items.AddRange(new object[] {
-            "Convidado"});
+            "Convidado",
+            " "});
             this.cmbDiscount.Location = new System.Drawing.Point(361, 435);
             this.cmbDiscount.Name = "cmbDiscount";
             this.cmbDiscount.Size = new System.Drawing.Size(108, 21);
@@ -437,6 +438,7 @@
             this.txtBoxConv.Text = "Insira o Nome";
             this.txtBoxConv.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtBoxConv.Visible = false;
+            this.txtBoxConv.Enter += new System.EventHandler(this.txtBoxConv_Enter);
             // 
             // pictureBox2
             // 

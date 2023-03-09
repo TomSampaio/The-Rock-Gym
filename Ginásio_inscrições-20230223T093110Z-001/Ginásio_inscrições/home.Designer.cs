@@ -197,7 +197,7 @@
             // 
             this.pic_planotreino.Image = global::Ginásio_inscrições.Properties.Resources.Plano_de_Treino;
             this.pic_planotreino.Location = new System.Drawing.Point(607, 222);
-            this.pic_planotreino.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic_planotreino.Margin = new System.Windows.Forms.Padding(2);
             this.pic_planotreino.Name = "pic_planotreino";
             this.pic_planotreino.Size = new System.Drawing.Size(421, 231);
             this.pic_planotreino.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -209,7 +209,7 @@
             // 
             this.pic_planoalim.Image = global::Ginásio_inscrições.Properties.Resources.Plano_Alimentar;
             this.pic_planoalim.Location = new System.Drawing.Point(607, 222);
-            this.pic_planoalim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic_planoalim.Margin = new System.Windows.Forms.Padding(2);
             this.pic_planoalim.Name = "pic_planoalim";
             this.pic_planoalim.Size = new System.Drawing.Size(421, 231);
             this.pic_planoalim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -242,7 +242,6 @@
             this.Text = "Home";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.home_FormClosed);
             this.Load += new System.EventHandler(this.home_Load);
-            this.Shown += new System.EventHandler(this.home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_planotreino)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_planoalim)).EndInit();

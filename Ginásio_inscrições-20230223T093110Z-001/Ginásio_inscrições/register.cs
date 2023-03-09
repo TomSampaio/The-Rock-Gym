@@ -174,5 +174,10 @@ namespace Ginásio_inscrições
                 txtBoxConv.Visible = false;
             }
         }
+
+        private void txtBoxConv_Enter(object sender, EventArgs e)
+        {
+            txtBoxConv.Text = "";
+        }
     }
 }
